@@ -48,7 +48,7 @@ export const pageQuery = graphql`
       frontmatter {
         excerpt
         title
-        date
+        date(formatString: "MMMM DD, YYYY")
         category
         tags
         cover
