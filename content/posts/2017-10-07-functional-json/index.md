@@ -323,7 +323,7 @@ JsonResult<Item>.Error(
 
 ## Summary
 
-Loading JSON files no longer throws exceptions in my code. Yes, there's still the potential for mal-formed JSON to cause errors, and then these errors are handled gracefully. Reading this JSON is functional
+Loading JSON files no longer throws exceptions in my code. Yes, there's still the potential for malformed JSON to cause errors, and then these errors are handled gracefully. Reading this JSON is functional
 ```fsharp
 let JsonAsScenario (basePath: string) (value: JsonValue) =
     json value {
