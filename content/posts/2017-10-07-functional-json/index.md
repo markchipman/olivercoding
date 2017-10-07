@@ -214,7 +214,7 @@ All of that code does several things:
   ```fsharp
   JsonValue -> JsonResult<Weapon>
   ```
-* By conforming to that signature above, these expressions may be nested.
+* By conforming all functions doing object parsing to the above function signature, these expressions may be nested.
 
 The file of items may be returned as an array of items with these functions _JsonValue -> JsonResult<Item []>_
 ```fsharp
@@ -292,7 +292,7 @@ Here's the data file for "items.json"
 ]
 ```
 
-This code would become 
+The end result of parsing the above file with the functions above would be 
 ```fsharp
 JsonResult<Item>.Ok(
   [|
@@ -309,7 +309,7 @@ JsonResult<Item>.Ok(
   |]
 ```
 
-Now let's change "itemtype" to a bad value "wasdwasd". I'd get informed with a tolerable message.
+Now let's change "itemtype" to a bad value "wasdwasd". I'd get a tolerable message as a result
 
 ```fsharp
 JsonResult<Item>.Error(
