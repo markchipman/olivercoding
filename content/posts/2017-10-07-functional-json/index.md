@@ -13,7 +13,7 @@ tags:
     - JSON
 ---
 
-I'm using the wonderful [Fsharp.Data][0] library to parse the JSON for me and handle all the [edge cases, such as seen in IETF RFC 7159][2].  Fsharp.Data JSON parse spits out results into [this structure][2]:  
+I'm using the wonderful [Fsharp.Data][0] library to parse the JSON for me and handle all the [edge cases, such as seen in IETF RFC 7159][2].  Fsharp.Data JSON parse spits out results into [this structure][1]:  
 ```fsharp
 type JsonValue =
   | String of string
@@ -343,7 +343,7 @@ let JsonAsScenario (basePath: string) (value: JsonValue) =
 
 
 [0]: http://fsharp.github.io/FSharp.Data/
-[1]: https://github.com/fsharp/FSharp.Data/blob/fc1e853013900dd5d680b9bc9ebe8d3ed3a5ff8dd/src/Json/JsonValue.fs#L34-L41
+[1]: https://github.com/fsharp/FSharp.Data/blob/fc1e853013900dd5d680b9bc9ebe8d3ed3a5f8dd/src/Json/JsonValue.fs#L32-L41
 [2]: https://tools.ietf.org/html/rfc7159
 [3]: https://fsharpforfunandprofit.com/posts/discriminated-unions/
 [4]: https://github.com/xyncro/chiron
