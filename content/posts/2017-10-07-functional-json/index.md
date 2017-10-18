@@ -3,7 +3,6 @@ path: "2017-10-07-functional-json"
 date: "2017-10-07"
 title: "Functional JSON"
 excerpt: "Functional JSON with F# and computation expressions"
-cover: "https://unsplash.it/1152/300/?random?SuperLong"
 category: "tech"
 tags:
     - F#

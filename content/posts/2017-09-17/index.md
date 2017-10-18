@@ -3,7 +3,6 @@ path: "2017-09-17-new-blog-setup"
 date: "2017-09-17"
 title: "New Blog Setup"
 excerpt: "Setting up advanced Gatsby JS"
-cover: "https://unsplash.it/1152/300/?random?SuperLong"
 category: "tech"
 tags:
     - Blog

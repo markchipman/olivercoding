@@ -3,7 +3,6 @@ path: "2017-09-23-game-project"
 date: "2017-09-23T22:07:26-04:00"
 title: "F# Game Project"
 excerpt: "A brief summary of ongoing game project and F#"
-cover: "https://unsplash.it/1152/300/?random?SuperLong"
 category: "tech"
 tags:
     - F#
