@@ -3,7 +3,6 @@ path: "2017-09-23-gatsbyjs-on-netlify"
 date: "2017-09-23"
 title: "GatsbyJS on Netlify"
 excerpt: "Deploying GatsbyJS with Netlify"
-cover: "https://unsplash.it/1152/300/?random?SuperLong"
 category: "tech"
 tags:
     - Blog

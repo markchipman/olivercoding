@@ -3,7 +3,6 @@ path: "2017-09-09-hello-world"
 date: "2017-09-09"
 title: "Hello World"
 excerpt: "Daniel Oliver's new blog goals, topics, and ramblings."
-cover: "https://unsplash.it/1152/300/?random?SuperLong"
 category: "tech"
 tags:
     - Blog
