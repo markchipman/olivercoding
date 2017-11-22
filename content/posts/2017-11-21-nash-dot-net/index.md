@@ -10,7 +10,7 @@ tags:
     - User Group
 ---
 
-I was the Co-President of the [Nashville, TN .NET Users Group][0] for nine months in 2017. Here is my accounting of the experience.
+I was the Co-President of the [Nashville, TN .NET Users Group][0] for nine months in 2017. Here is some of my thoughts of the experience.
 
 ## The Election
 
@@ -57,9 +57,22 @@ Many people wanted to talk to me because I was part of the group leadership. I'm
 
 I quickly recognized the value of talking to as much of the group as possible. So I instituted a rule for myself: **I must introduce myself to new people every meetup**, preferrably those people who are sitting by themselves. I didn't meet everyone, but I tried.
 
-Meeting new people isn't nearly so hard as remembering names, faces, and relevant facts, especially with a month between most meetups. I would spend the drive home after every meetup verbally repeating the list of people I met. It wasn't perfect, but it wasn't bad.
+Meeting new people isn't nearly so hard as remembering names, faces, and relevant facts, especially with a month between most meetups. I would spend the drive home after every meetup verbally repeating the list of people I met. It wasn't perfect, but it helped.
 
+## Jobs
 
+I was approached by a lot of recruiters to recommend them and to send out their job postings. I don't recall ever sending out a job posting because I didn't want to give preferential treatment. Though any recruiter with the opportunity to speak certainly got the chance to sell themselves.
 
+On the flip side, a decent amount of people talked to me in the hope that I'd be valuable in their job search. The most I could really do is recommend a recruiter if I know they have any relevant openings.
+
+## Responsibility
+
+Each month, one or both of us co-presidents would introduce the speaker, thank Vaco for the food and getting us the meeting space, and close out the meeting. That's the gist of our meetup tasks.
+
+Outside the actual meeting, arranging the speakers was the big thing.
+
+## Summary
+
+I made a lot of mistakes, but I'm thankful to have had the opportunity to be Nash.NET user group co-president for part of the year.
 
 [0]: https://www.meetup.com/Nashville-NET-User-Group/
