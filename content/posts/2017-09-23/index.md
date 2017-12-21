@@ -49,7 +49,7 @@ server {
 
 Netlify has this website called [testmysite.io][1] that measures a few interesting stats. Now since it's run by Netlify I have some skepticism since it is trying to sell Netlify's product, but in this case it's not actually wrong. 
 
-**Diclaimer**: The only thing I'm proving here is that I'm not more experienced to do better than Netlify and that I'm not willing to dedicate enough time to learn to do it better.
+**Disclaimer**: The only thing I'm proving here is that I'm not more experienced to do better than Netlify and that I'm not willing to dedicate enough time to learn to do it better.
 
 ### Old site on Linode with NGinx
 ![Report Card](old_reportcard.png)
