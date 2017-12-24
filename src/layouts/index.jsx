@@ -8,33 +8,41 @@ import logo from "../static/logo.svg";
 import "./index.scss";
 
 const Header = () => (
-  <div className="layout-header-bar">
-    <div className="layout-header-bar-internal">
-      <h1>
-        <Link
-          to="/"
-          style={{
-            color: "rgb(201, 182, 76)",
-            textDecoration: "none",
-            textShadow: "1px 1px #111122",
-            margin: 0
-          }}
-        >
-          <img
-            width="100px"
-            height="100px"
-            src={logo}
-            style={{
-              margin: "0px 15px 0px 0px",
-              padding: "0px 0px 0px 0px",
-              float: "left"
-            }}
-          />
-          OLIVER CODING
-        </Link>
-      </h1>
+  <section className="hero is-primary">
+    <div className="hero-body">
+      <div className="container">
+          <div className="columns is-mobile is-centered is-is-multiline">
+            <div className="column is-narrow">
+              <Link
+                  to="/"
+                  style={{
+                    color: "rgb(201, 182, 76)",
+                    textDecoration: "none",
+                    textShadow: "1px 1px #111122",
+                    margin: 0
+                  }}
+                >
+                <img className="image is-128x128"
+                  src={logo}/>
+              </Link>
+            </div>
+          <div className="column">
+              <Link
+                  to="/"
+                  style={{
+                    color: "rgb(201, 182, 76)",
+                    textDecoration: "none",
+                    textShadow: "1px 1px #111122",
+                    margin: 0
+                  }}
+                >
+                <h1 className="title">OLIVER<br/>CODING</h1>
+              </Link>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
+  </section>
 );
 
 export default class MainLayout extends React.Component {
@@ -81,10 +89,10 @@ export default class MainLayout extends React.Component {
           <meta name="description" content={config.siteDescription} />
         </Helmet>
         <Header />
-        <div className="layout-body">
+        <div className="container">
           {children()}
-          <Footer config={config} />
         </div>
+        <Footer config={config} />
       </div>
     );
   }

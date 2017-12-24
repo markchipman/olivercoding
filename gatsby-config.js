@@ -20,12 +20,6 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sass",
     {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/utils/typography.js`
-      }
-    },
-    {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "posts",
@@ -39,7 +33,7 @@ module.exports = {
           {
             resolve: "gatsby-remark-images",
             options: {
-              maxWidth: 690
+              maxWidth: 760
             }
           },
           {

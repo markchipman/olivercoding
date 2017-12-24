@@ -11,7 +11,7 @@ export default class TagTemplate extends React.Component {
     return (
       <div className="tag-container">
         <Helmet title={tagMessage} />
-        <h1>{tagMessage}</h1>
+        <h1 className="title">{tagMessage}</h1>
         <PostListing postEdges={postEdges} />
       </div>
     );

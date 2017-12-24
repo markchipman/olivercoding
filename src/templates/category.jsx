@@ -7,11 +7,11 @@ export default class CategoryTemplate extends React.Component {
   render() {
     const category = this.props.pathContext.category;
     const postEdges = this.props.data.allMarkdownRemark.edges;
+    const categoryMessage = `Posts categorized as ${category}` || config.siteTitle;
     return (
       <div className="category-container">
-        <Helmet
-          title={`Posts in category "${category}" | ${config.siteTitle}`}
-        />
+        <Helmet title={categoryMessage} />
+        <h1 className="title">{categoryMessage}</h1>
         <PostListing postEdges={postEdges} />
       </div>
     );
@@ -35,6 +35,7 @@ export const pageQuery = graphql`
             title
             date(formatString: "MMMM DD, YYYY")
             category
+            path
             tags
           }
           fields {
