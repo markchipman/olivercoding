@@ -1,53 +1,61 @@
-@import "./const.scss";
+@charset "utf-8";
 
-* {
-    box-sizing: border-box;
-}
+@import "../../node_modules/bulma/sass/utilities/initial-variables";
+@import "../../node_modules/bulma/sass/utilities/functions";
 
-html {
-    height: 100%;
-}
+// Add a serif family
+$family-serif: "Merriweather", "Georgia", serif;
 
-body {
-    margin: 0;
-    background-color: $tertiary-color;
-}
+$yellow-olivercoding: rgb(201, 182, 76);
+$grey-olivercoding: rgb(104, 123, 160);
+$white-olivercoding: #F0F0F0;
+$white-lighter-olivercoding: #F8F8F8;
 
-.link-override {
-    color: $primary-color;
-    text-decoration: none;
-    text-shadow: 1px 1px #111122;
-}
 
-.layout-header-bar {
-    margin-bottom: 1.45rem;
-    background: $secondary-color;
-}
+// 3. Set the derived variables
+// Use the new pink as the primary color
+$primary: $grey-olivercoding;
+$primary-invert: $yellow-olivercoding;
+$body-background-color: $white-olivercoding;
+$box-background-color: $white-lighter-olivercoding;
 
-.layout-header-bar-internal {
-    margin: 0 auto;
-    max-width: 960px;
-    padding: 0.75rem 0.75rem;
+// Use the new serif family
+$family-primary: $family-serif;
 
-    h1 {
-        margin: 0;
-        height: 100px;
-    }
-}
+// 4. Setup your Custom Colors
+$linkedin: #0077b5;
+$linkedin-invert: findColorInvert($linkedin);
+$twitter: #55acee;
+$twitter-invert: findColorInvert($twitter);
+$github: #333;
+$github-invert: findColorInvert($github);
 
-.layout-body {
-    margin: 0 auto;
-    max-width: 960px;
-    padding: 0px 1.0875rem 1.45rem;
-    padding-top: 0;
-}
+// 5. Add new color variables to the color map.
+@import "../../node_modules/bulma/sass/utilities/derived-variables.sass";
+$addColors: (
+  "twitter":($twitter, $twitter-invert),
+  "linkedin": ($linkedin, $linkedin-invert),
+  "github": ($github, $github-invert)
+);
+$colors: map-merge($colors, $addColors);
 
-.blog-post-title {
-    text-shadow: 1px 2px #DDDDDD;
-}
-
-.blog-post-date {
-    text-shadow: 1px 2px #EEEEEE;
-    margin-bottom: 1.5rem;
-}
-  
+/*! bulma.io v0.6.1 | MIT License | github.com/jgthms/bulma */
+@import "../../node_modules/bulma/sass/utilities/_all";
+@import "../../node_modules/bulma/sass/base/_all";
+@import "../../node_modules/bulma/sass/elements/box";
+@import "../../node_modules/bulma/sass/elements/button";
+@import "../../node_modules/bulma/sass/elements/container";
+@import "../../node_modules/bulma/sass/elements/content";
+@import "../../node_modules/bulma/sass/elements/form";
+@import "../../node_modules/bulma/sass/elements/icon";
+@import "../../node_modules/bulma/sass/elements/image";
+@import "../../node_modules/bulma/sass/elements/notification";
+@import "bulma_other";
+@import "../../node_modules/bulma/sass/elements/progress";
+@import "../../node_modules/bulma/sass/elements/table";
+//TAG MESSES WITH PRISMJS.
+//@import "../../node_modules/bulma/sass/elements/tag";
+@import "../../node_modules/bulma/sass/elements/title";
+@import "../../node_modules/bulma/sass/components/_all";
+@import "../../node_modules/bulma/sass/grid/_all";
+@import "../../node_modules/bulma/sass/layout/_all";
