@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Link from "gatsby-link";
+import { OliverLogo } from "../../layouts/static"
 
 const NavLink = (props) => (
     <Link to={props.link} className="navbar-item" >
@@ -26,7 +27,7 @@ class NavBar extends Component {
             <nav className="navbar" role="navigation" aria-label="main navigation">
               <div className="navbar-brand">
                 <div className="navbar-item">
-                  <img className="image is-48x48" src={this.props.logo}/>
+                  <img className="image is-48x48" src={OliverLogo}/>
                 </div>
                 <div className={"navbar-burger burger " + (this.state.active ? "is-active": "")} onClick={this.toggleBurgerMenu}>
                   <span></span>

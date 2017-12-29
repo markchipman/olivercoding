@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import Link from "gatsby-link";
+import { OliverLogo } from "../../layouts/static"
 
 class Header extends Component {
     render() {
@@ -19,7 +20,7 @@ class Header extends Component {
                         }}
                         >
                         <img className="image is-128x128"
-                        src={this.props.logo}/>
+                        src={OliverLogo}/>
                     </Link>
                     </div>
                 <div className="column">

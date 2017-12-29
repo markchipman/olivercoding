@@ -6,8 +6,6 @@ import Footer from "../components/Footer/Footer";
 import NavBar from "../components/NavBar/NavBar";
 import Header from "../components/Header/Header";
 
-
-import logo from "../static/logo.svg";
 import "./index.scss";
 
 export default class MainLayout extends React.Component {
@@ -53,8 +51,8 @@ export default class MainLayout extends React.Component {
           <title>{`${config.siteTitle} |  ${this.getLocalTitle()}`}</title>
           <meta name="description" content={config.siteDescription} />
         </Helmet>
-        <NavBar logo={logo} />
-        <Header logo={logo} />
+        <NavBar />
+        <Header />
         <div className="container">
           {children()}
         </div>
