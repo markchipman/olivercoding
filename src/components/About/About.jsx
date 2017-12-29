@@ -1,12 +1,25 @@
 import React, { Component } from "react";
+import { OliverProfilePicture } from "../../layouts/static"
 
 class About extends Component {
   render() {
     return (
-      <div className="about">
-        <h1>
-          Edit About component or pages/about.jsx to include your information.
-        </h1>
+      <div>
+        <article className="columns is-multi-line">
+          <div className="media-content column">
+            <div className="content is-medium">
+              <p>
+                I am Daniel Oliver, a Tennessee Software Developer. I am constantly learning and building new things and I blog about them here.
+                <br/>
+                <br/>
+                My hobbies include flying drones, fencing with swords, playing boardgames, and reading books.
+              </p>
+            </div>
+          </div>
+          <div className="column">
+            <img className="image" src={OliverProfilePicture} width={480} alt="profile picture" />
+          </div>
+        </article>
       </div>
     );
   }
