@@ -33,6 +33,9 @@ class Header extends Component {
                         }}
                         >
                         <h1 className="title">OLIVER<br/>CODING</h1>
+                        { this.props.subtitle &&
+                            <h1 className="subtitle">{this.props.subtitle}</h1>
+                        }
                     </Link>
                 </div>
                 </div>

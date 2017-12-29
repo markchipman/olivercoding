@@ -22,22 +22,19 @@ class NavBar extends Component {
     };
 
     render() {
-      const menuClassNames = "navbar-menu " + (this.state.active ? "is-active": "");
-      const burgerClassNames = "navbar-burger burger " + (this.state.active ? "is-active": "");
-
         return (
             <nav className="navbar" role="navigation" aria-label="main navigation">
               <div className="navbar-brand">
                 <div className="navbar-item">
                   <img className="image is-48x48" src={this.props.logo}/>
                 </div>
-                <div className={burgerClassNames} onClick={this.toggleBurgerMenu}>
+                <div className={"navbar-burger burger " + (this.state.active ? "is-active": "")} onClick={this.toggleBurgerMenu}>
                   <span></span>
                   <span></span>
                   <span></span>
                 </div>
               </div>
-              <div className={menuClassNames}>    
+              <div className={"navbar-menu " + (this.state.active ? "is-active": "")}>    
                 <div className="navbar-start">
                   <NavLink link="/" title="Home" />
                   <NavLink link="/About" title="About" />
