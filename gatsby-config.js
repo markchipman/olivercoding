@@ -154,6 +154,14 @@ module.exports = {
           }
         ]
       }
+    },
+    {
+      resolve: "gatsby-source-goodreads",
+      options: {
+        developerKey: process.env.GoodReadsKey,
+        goodReadsUserId: "74308269",
+        userShelf: "professional" //optional
+      }
     }
   ]
 };
