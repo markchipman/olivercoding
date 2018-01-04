@@ -43,7 +43,7 @@ class NavBar extends Component {
                 <div className="navbar-start">
                   <NavLink toggleOff={this.toggleOff} link="/" title="Home"/>
                   <NavLink toggleOff={this.toggleOff} link="/About" title="About" />
-                  <NavLink toggleOff={this.toggleOff} link="/RecommendedBooks" title="Books Recommendations" />
+                  <NavLink toggleOff={this.toggleOff} link="/RecommendedBooks" title="Book Recommendations" />
                 </div>  
               </div>          
             </nav>
