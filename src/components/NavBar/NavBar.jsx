@@ -3,7 +3,7 @@ import Link from "gatsby-link";
 import { OliverLogo } from "../../layouts/static"
 
 const NavLink = (props) => (
-    <Link to={props.link} className="navbar-item" >
+    <Link to={props.link} onClick={props.toggleOff} className="navbar-item" >
         {props.title}
     </Link>
   );
@@ -16,10 +16,14 @@ class NavBar extends Component {
         };
         
         this.toggleBurgerMenu = this.toggleBurgerMenu.bind(this);
+        this.toggleOff = this.toggleOff.bind(this);
     }
     toggleBurgerMenu() {
         const currentState = this.state.active;
         this.setState({ active: !currentState });
+    };
+    toggleOff() {
+        this.setState({ active: false });
     };
 
     render() {
@@ -37,8 +41,9 @@ class NavBar extends Component {
               </div>
               <div className={"navbar-menu " + (this.state.active ? "is-active": "")}>    
                 <div className="navbar-start">
-                  <NavLink link="/" title="Home" />
-                  <NavLink link="/About" title="About" />
+                  <NavLink toggleOff={this.toggleOff} link="/" title="Home"/>
+                  <NavLink toggleOff={this.toggleOff} link="/About" title="About" />
+                  <NavLink toggleOff={this.toggleOff} link="/RecommendedBooks" title="Book Recommendations" />
                 </div>  
               </div>          
             </nav>
