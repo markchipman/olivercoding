@@ -85,7 +85,6 @@ module.exports = {
         ]
       }
     },
-    "gatsby-plugin-offline",
     {
       resolve: "gatsby-plugin-feed",
       options: {
@@ -162,6 +161,7 @@ module.exports = {
         goodReadsUserId: "74308269",
         userShelf: "professional" //optional
       }
-    }
+    },
+    `gatsby-plugin-netlify`, // make sure to put last in the array
   ]
 };

@@ -7,7 +7,6 @@ category: "Azure"
 tags:
     - Active Directory
     - Azure
-    - .NET Core
 ---
 
 **Required: Azure Subscription** (I use free credits from [Visual Studio Dev Essentials][0])
