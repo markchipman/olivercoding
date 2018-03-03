@@ -21,9 +21,11 @@ This is a study guide not in that it contains all info, but it's an aggregate of
 
 [Certification Overview](https://www.microsoft.com/en-us/learning/certification-overview.aspx)
 
-Docker Run SQL Server 2017:
-> docker run --rm --name sql -e ACCEPT_EULA=Y -e MSSQL_SA_PASSWORD=P@ssw0rd -p 1433:1433 -d microsoft/mssql-server-linux:2017-latest
-> docker exec -it sql /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P P@ssw0rd
+Docker Run SQL Server 2017 (for local developer testing):
+```ps
+docker run --rm --name sql -e ACCEPT_EULA=Y -e MSSQL_SA_PASSWORD=P@ssw0rd -p 1433:1433 -d microsoft/mssql-server-linux:2017-latest
+docker exec -it sql /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P P@ssw0rd
+```
 
 ## Contents
 
