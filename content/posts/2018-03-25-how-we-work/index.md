@@ -16,7 +16,7 @@ When I first started my career, I didn't really care about how work was assigned
 
 How a place works is very important to quality of life, to everyone's peace of mind, and to the company's culture. How a place works is a significant amount of the interview questions I ask potential employers.
 
-# Types of work
+# Types of Work
 
 I broadly categorize software development work into three categories. There is some overlap and there is arguments for more categories and finer distinction, but these rough categories are simple enough for discussion.
 
@@ -89,7 +89,7 @@ Most people call having a monopoly on a subject "job security".  I call it a lia
 
 I will say that playing 20 Questions Game with your interviewers on how they assign work is fun, because they probably haven't put extensive thought into why or how they assign work.
 
-# Managing work
+# Managing Work
 
 The infamous spreadsheet of tasks held by the master Project Manager/Customer Account Representative/Scrum Master/whoever is being replaced with the infamous giant backlog of tasks in an online task tracker tool.
 
@@ -170,6 +170,16 @@ The point is that Pipeline Development shouldn't be ignored. Every upper managem
 Every company has at least one employee that continuously says "my old employer did X and Y, we need to do X and Y because of best practices". Even I've said that. We start to go down the road of "Scrum for Scrum's sake" instead of thinking about why we did Scrum in the first place.
 
 As time goes on, what methodology is used doesn't matter as much to me, so long as it works in the context of that company and team. I do favor being as agile as possible, but that doesn't work for every industry or project type. And it's much more important to me that we are a cohesive team and are well managed.
+
+## Measuring Work
+
+The amount of story points, number of completed tasks, or the speed of development are all metrics I've seen used. But I want to break it down to one simple truth that transcends whatever internal metric your team uses:
+
+**The metric that upper management values, is the metric you will be measured by.**
+
+Now this may seem simple, or even wrong, but it's true because this is the same metric that your management will be graded on, and consequently you will be graded on even if indirectly. The metrics that the CEO/President/Board values, is what the company performance will be measured on.
+
+I have no more to say on metrics. It's not complicated.
 
 # Summary
 
