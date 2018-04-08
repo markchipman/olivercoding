@@ -57,6 +57,15 @@ module.exports = {
         color: config.themeColor
       }
     },
+    {
+      resolve: "gatsby-source-goodreads",
+      options: {
+        developerKey: process.env.GoodReadsKey,
+        goodReadsUserId: "74308269",
+        userShelf: "professional" //optional
+      }
+    },
+    "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
     "gatsby-plugin-catch-links",
     "gatsby-plugin-twitter",
@@ -154,14 +163,7 @@ module.exports = {
         ]
       }
     },
-    {
-      resolve: "gatsby-source-goodreads",
-      options: {
-        developerKey: process.env.GoodReadsKey,
-        goodReadsUserId: "74308269",
-        userShelf: "professional" //optional
-      }
-    },
+    `gatsby-plugin-offline`,
     `gatsby-plugin-netlify`, // make sure to put last in the array
   ]
 };
