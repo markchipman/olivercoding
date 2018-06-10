@@ -9,7 +9,7 @@ class Header extends Component {
           <div className="hero-body">
             <div className="container">
                 <div className="columns is-mobile is-centered is-is-multiline">
-                    <div className="column is-narrow">
+                    <div id="mainLogoDiv" className="column is-narrow">
                     <Link
                         to="/"
                         style={{
