@@ -178,6 +178,8 @@ Test execution time: 14.3788 Seconds
 
 ## Summary
 
+[Code is here on GitHub][6].
+
 Combining Web Testing with a Unit Testing framework makes writing tests for the browser easy. The next steps are to write tests, to write functions for login methods, and to include other browsers for testing.  I hope you find testing Chrome browser with F# and Canopy as easy and as enjoyable as I do!
 
 [0]: http://lefthandedgoat.github.io/canopy/
@@ -186,3 +188,4 @@ Combining Web Testing with a Unit Testing framework makes writing tests for the 
 [3]: https://www.microsoft.com/net/download/windows
 [4]: https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-fsharp
 [5]: https://www.google.com/chrome/
+[6]: https://github.com/DanielOliver/CanopyExample
