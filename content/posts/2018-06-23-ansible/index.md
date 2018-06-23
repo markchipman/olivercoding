@@ -68,15 +68,22 @@ Vagrant.configure("2") do |config|
   config.vm.box = "centos/7"
   config.vm.network "private_network", type: "dhcp"
 
-  config.vm.define "db0" do |db0| end
+  config.vm.define "db0" do |db0| 
+    db0.vm.network "forwarded_port", guest: 5432, host: 5432
+  end
+  
+  config.vm.define "db1" do |db1|
+    db1.vm.network "forwarded_port", guest: 5432, host: 5433
+  end
 
-  config.vm.define "db1" do |db1| end
-
-  config.vm.define "db2" do |db2| end
+  config.vm.define "db2" do |db2| 
+    db2.vm.network "forwarded_port", guest: 5432, host: 5434
+  end
 
   config.vm.provider "virtualbox" do |vb|
     vb.memory = "1536"
   end
+
 end
 ```
 
