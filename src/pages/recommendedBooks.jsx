@@ -1,7 +1,5 @@
 import React from "react";
 import Helmet from "react-helmet";
-import PostListing from "../components/BookInfo/BookInfo";
-import SEO from "../components/SEO/SEO";
 import config from "../../data/SiteConfig";
 import BookInfo from "../components/BookInfo/BookInfo";
 
