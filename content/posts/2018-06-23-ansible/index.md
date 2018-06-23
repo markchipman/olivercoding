@@ -107,7 +107,7 @@ vagrant ssh db0
 
 Now go into the ansible folder from the structure above and create a new file "ansible.cfg"
 
-```yaml
+```ini
 [defaults]
 host_key_checking=False
 inventory=hosts-vagrant
@@ -123,7 +123,7 @@ ssh_args="-F ~/.vagrant_keys/vagrant-ssh.cfg"
 
 Create a new file named "hosts-vagrant" to list out our "inventory" or list of files. The only contents of that file should be this:
 
-```
+```ini
 [database]
 db[0:2]
 ```
