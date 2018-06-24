@@ -7,7 +7,7 @@ category: "tech"
 tags:
     - Vagrant
     - Powershell
-    - WindowsSubsystemLinux
+    - Windows Subsystem Linux
     - PostgreSQL
     - Ansible
     - VirtualBox
