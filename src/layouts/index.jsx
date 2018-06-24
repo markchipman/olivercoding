@@ -53,14 +53,6 @@ export default class MainLayout extends React.Component {
           <meta name="description" content={config.siteDescription} />
         </Helmet>
         <NavBar />
-        {/* The below Navbar is a dummy element used to get spacing right on the top. */}
-        <nav className="navbar">
-          <div className="navbar-brand">
-            <div className="navbar-item">
-              <img className="image is-48x48" src={OliverLogo}/>
-            </div>
-          </div>
-        </nav>
         <Header />
         <div className="container">
           {children()}
