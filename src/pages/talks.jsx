@@ -1,9 +1,8 @@
 import React from "react";
 import Helmet from "react-helmet";
 import config from "../../data/SiteConfig";
-import BookInfo from "../components/BookInfo/BookInfo";
 
-class RecommendedBooks extends React.Component {
+class Talks extends React.Component {
     render() {
         return (
             <div className="index-container">
@@ -41,4 +40,4 @@ class RecommendedBooks extends React.Component {
     }
 }
 
-export default RecommendedBooks;
+export default Talks;
