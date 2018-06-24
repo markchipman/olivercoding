@@ -9,16 +9,16 @@ class PostTags extends Component {
     return (
       <div className="container">
         <hr />
-        <div className="buttons has-addons is-centered">
-          {tags &&
+        <div className="buttons is-centered">
+          {tags &&          
             tags.map(tag => (
               <Link
                 key={tag}
                 style={{ textDecoration: "none" }}
                 to={`/tags/${_.kebabCase(tag)}`}
-                className="tags-button"
+                className="button tag2 is-dark"
               >
-                <button className="button" >{tag}</button>
+                <span>{tag}</span>
               </Link>
             ))}
           </div>
