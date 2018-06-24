@@ -1,6 +1,7 @@
 import React from "react";
 import Helmet from "react-helmet";
 import PostListing from "../components/PostListing/PostListing";
+import TagListing from "../components/TagListing/TagListing";
 import SEO from "../components/SEO/SEO";
 import config from "../../data/SiteConfig";
 
@@ -8,10 +9,17 @@ class Index extends React.Component {
   render() {
     const postEdges = this.props.data.allMarkdownRemark.edges;
     return (
-      <div className="index-container">
+      <div>
         <Helmet title={config.siteTitle} />
         <SEO postEdges={postEdges} />
-        <PostListing postEdges={postEdges} />
+        <div className="columns">
+          <div className="column is-three-quarters">
+            <PostListing postEdges={postEdges} />
+          </div>
+          <div className="column">
+            <TagListing postEdges={postEdges} />
+          </div>
+        </div>
       </div>
     );
   }

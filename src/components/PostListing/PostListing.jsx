@@ -21,8 +21,8 @@ class PostListing extends React.Component {
   render() {
     const postList = this.getPostList();
     return (
-      <div className="container">
-        {/* Your post list here. */
+      <div>        
+        {
         postList.map(post => (
           <div className="box" key={post.path}>
             <h1 className="title is-3">
