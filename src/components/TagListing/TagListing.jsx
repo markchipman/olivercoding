@@ -15,7 +15,7 @@ class TagListing extends React.Component {
   render() {
     const tagList = this.getTagList();    
     return (
-        <div className="copntainer">
+        <div>
             <h3 className="subtitle is-4">Tags</h3>
             <div className="field is-grouped is-grouped-multiline">
             { _.keys(tagList).sort(function(a, b) { return tagList[b] - tagList[a]; }).map(x =>
