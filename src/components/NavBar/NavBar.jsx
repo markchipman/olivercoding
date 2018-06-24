@@ -28,7 +28,7 @@ class NavBar extends Component {
 
     render() {
         return (
-            <nav className="navbar" role="navigation" aria-label="main navigation">
+            <nav className="navbar is-fixed-top" role="navigation" aria-label="main navigation">
               <div className="navbar-brand">
                 <div className="navbar-item">
                   <img className="image is-48x48" src={OliverLogo}/>
@@ -48,6 +48,7 @@ class NavBar extends Component {
                 </div>  
               </div>          
             </nav>
+            
         );
   }
 }

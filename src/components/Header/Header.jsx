@@ -5,7 +5,7 @@ import { OliverLogo } from "../../layouts/static"
 class Header extends Component {
     render() {
         return(
-        <section className="hero is-primary">
+        <section className="hero is-primary is-bold is-small">
           <div className="hero-body">
             <div className="container">
                 <div className="columns is-mobile is-centered is-is-multiline">
@@ -33,7 +33,7 @@ class Header extends Component {
                             margin: 0
                         }}
                         >
-                        <h1 className="title">OLIVER<br/>CODING</h1>
+                        <h1 className="title is-large">OLIVER<br/>CODING</h1>
                         { this.props.subtitle &&
                             <h1 className="subtitle">{this.props.subtitle}</h1>
                         }
