@@ -6,6 +6,7 @@ excerpt: "2017 brought a lot of changes, this is a review."
 category: "review"
 tags:
     - Review
+    - Work
 ---
 
 I have changed jobs, cities, and my attitude this year. I'm focusing on my professional year in review here.

@@ -6,6 +6,7 @@ excerpt: "My experiences, tips, and tricks as a new speaker"
 category: "Speaking"
 tags:
     - Speaking
+    - User Group
 ---
 
 I dived into speaking this year at technology user groups, and am submitted to several upcoming conferences. So far, I have spoken 3 times (not counting a quick lightning talk last year).
