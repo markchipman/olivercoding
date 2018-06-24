@@ -10,7 +10,7 @@ tags:
     - WindowsSubsystemLinux
     - PostgreSQL
     - Ansible
-    - Virtualbox
+    - VirtualBox
 ---
 
 My purpose is to show installing Postgres via Ansible, but along the way I'm going to show how to use Vagrant to create local machines for testing.
