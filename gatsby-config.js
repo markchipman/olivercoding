@@ -2,6 +2,12 @@ const config = require("./data/SiteConfig");
 
 const pathPrefix = config.pathPrefix === "/" ? "" : config.pathPrefix;
 
+if (!String.prototype.encodeHTML) {
+  String.prototype.encodeHTML = function () {
+    return this.replace(/[\u0019|\u0018]/g, '');
+  };
+}
+
 module.exports = {
   pathPrefix: config.pathPrefix,
   siteMetadata: {
@@ -132,7 +138,7 @@ module.exports = {
                 author: rssMetadata.author,
                 url: rssMetadata.site_url + edge.node.fields.slug,
                 guid: rssMetadata.site_url + edge.node.fields.slug,
-                custom_elements: [{ "content:encoded": edge.node.html }]
+                custom_elements: [{ "content:encoded": edge.node.html.encodeHTML() }]
               }));
             },
             query: `
