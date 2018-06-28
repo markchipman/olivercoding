@@ -21,7 +21,7 @@ tags:
 3. Upserting rows into Salesforce is not always a good idea because many tables have create-only fields. Such as the [PricebookEntryId on the OpportunityLineItem][2]. Upserting the same row twice, will fail on the second upsert because that column can't be updated.
 
 
-4. By default, Salesforce allows free-text in State or Country fields. This is particularly problematic when external systems expect [ISO-3166] codes.
+4. By default, Salesforce allows free-text in State or Country fields. This is particularly problematic when external systems expect [ISO-3166][3] codes.
     * Note: [Using ISO-3166 can be turned on for the entire organization and choosing states/countries from picklists.][4]
 
 
