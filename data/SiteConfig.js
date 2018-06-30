@@ -34,7 +34,7 @@ https: module.exports = {
       iconClassName: "fa fa-envelope"
     }
   ],
-  copyright: "Copyright © 2017. Oliver Coding", // Copyright string for the footer of the website and RSS feed.
+  copyright: "Copyright © 2018. Oliver Coding", // Copyright string for the footer of the website and RSS feed.
   themeColor: "#c9b64c", // Used for setting manifest and progress theme colors.
   backgroundColor: "#687ba0" // Used for setting manifest background color.
 };
