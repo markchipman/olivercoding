@@ -42,12 +42,15 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
       graphql(
         `
         {
-          allMarkdownRemark {
+          allMarkdownRemark(
+            sort: { fields: [frontmatter___date], order: DESC }
+          ) {
             edges {
               node {
                 frontmatter {
                   tags
                   category
+                  date(formatString: "MMMM DD, YYYY")
                   path
                 }
                 fields {
@@ -67,6 +70,8 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 
         const tagSet = new Set();
         const categorySet = new Set();
+        const edges = result.data.allMarkdownRemark.edges;
+        var counter = 0;
         result.data.allMarkdownRemark.edges.forEach(edge => {
           if (edge.node.frontmatter.tags) {
             edge.node.frontmatter.tags.forEach(tag => {
@@ -79,12 +84,29 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           }
           const pathActual = edge.node.frontmatter.path;
 
+          var nextPageSlug = '',
+            previousPageSlug = '';
+
+          if(counter !== 0) {
+            nextPageSlug = edges[counter - 1].node.fields.slug;
+          } else {
+            nextPageSlug = "";
+          }
+          if(counter < edges.length - 1) {
+            previousPageSlug = edges[counter + 1].node.fields.slug;
+          } else {
+            previousPageSlug = "";
+          }
+          counter = counter + 1;
+
           createPage({
             path: pathActual,
             component: postPage,
             context: {
               slug: edge.node.fields.slug,
-              pathActual: pathActual
+              pathActual: pathActual,
+              nextPageSlug: nextPageSlug,
+              previousPageSlug: previousPageSlug
             }
           });
         });
@@ -114,16 +136,3 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
     );
   });
 };
-
-// exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
-//   const { createNodeField } = boundActionCreators
-
-//   if (node.internal.type === `MarkdownRemark`) {
-//     const value = createFilePath({ node, getNode })
-//     createNodeField({
-//       name: `slug`,
-//       node,
-//       value,
-//     })
-//   }
-// }
