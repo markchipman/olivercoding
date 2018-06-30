@@ -31,7 +31,9 @@ class NavBar extends Component {
             <nav className="navbar is-fixed-top" role="navigation" aria-label="main navigation">
               <div className="navbar-brand">
                 <div className="navbar-item">
-                  <img className="image is-48x48" src={OliverLogo}/>
+                  <a href="/">
+                    <img className="image is-48x48" src={OliverLogo}/>
+                  </a>
                 </div>
                 <div className={"navbar-burger burger " + (this.state.active ? "is-active": "")} onClick={this.toggleBurgerMenu}>
                   <span></span>

@@ -7,7 +7,8 @@ import config from "../../data/SiteConfig";
 
 class Index extends React.Component {
   render() {
-    const postEdges = this.props.data.allMarkdownRemark.edges;
+    const postEdges = this.props.data.posts.edges;
+    const tagEdges = this.props.data.tags.edges;
     return (
       <div>
         <Helmet title={config.siteTitle} />
@@ -17,7 +18,7 @@ class Index extends React.Component {
             <PostListing postEdges={postEdges} />
           </div>
           <div className="column">
-            <TagListing postEdges={postEdges} />
+            <TagListing postEdges={tagEdges} />
           </div>
         </div>
       </div>
@@ -29,25 +30,34 @@ export default Index;
 
 /* eslint no-undef: "off"*/
 export const pageQuery = graphql`
-  query IndexQuery {
-    allMarkdownRemark(
-      limit: 2000
-      sort: { fields: [frontmatter___date], order: DESC }
-    ) {
-      edges {
-        node {
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-            tags
-            date(formatString: "MMMM DD, YYYY")
-            path
-            excerpt
-          }
+query IndexQuery {
+  posts: allMarkdownRemark(
+    limit: 2000
+    sort: { fields: [frontmatter___date], order: DESC }
+  ) {
+    edges {
+      node {
+        fields {
+          slug
+        }
+        frontmatter {
+          title
+          tags
+          date(formatString: "MMMM DD, YYYY")
+          path
+          excerpt
         }
       }
     }
   }
+  tags: allMarkdownRemark {
+    edges {
+      node {
+        frontmatter {
+          tags
+        }
+      }
+    }
+  }
+}
 `;
