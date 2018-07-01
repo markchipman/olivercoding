@@ -12,11 +12,11 @@ tags:
 
 Azure Active Directory makes it easy to add a custom domain.  So I have several here.  It's as simple as adding a single record to DNS.
 
-![Custom Domains](ad_custom_domain.png)
+![Custom Domains](0_ad_custom_domains3.png)
 
 With these custom domains, I have several users under one of these domains.
 
-![Custom Domains](ad_domain_users.png)
+![Custom Domains](20180701_filename.png)
 
 ## VSTS setup
 
