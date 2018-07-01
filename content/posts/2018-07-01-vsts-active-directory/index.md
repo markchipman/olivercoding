@@ -22,7 +22,7 @@ With these custom domains, I have several users under one of these domains.
 
 I have a VSTS project that I want to hook up to this custom domain's logins.
 
-![VSTS Project](VSTS_Project.png)
+![VSTS Project](20180701_filename2.png)
 
 Note that I'm logged into VSTS and Azure with the same account which has owner permissions on both.
 
