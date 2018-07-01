@@ -1,5 +1,5 @@
 ---
-path: "2018-07-01"
+path: "2018-07-01-vsts-active-directory"
 date: "2018-07-01T13:00:00-04:00"
 title: "Connecting Visual Studio Team Services to Azure Active Directory"
 excerpt: "Connecting Visual Studio Team Services to Azure Active Directory makes security of users easy and a unified experience across the organization."
