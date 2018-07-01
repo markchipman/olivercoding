@@ -12,7 +12,7 @@ tags:
 
 Azure Active Directory makes it easy to add a custom domain.  So I have several here.  It's as simple as adding a single record to DNS.
 
-![Custom Domains](ad_custom_domains.png)
+![Custom Domains](ad_custom_domain.png)
 
 With these custom domains, I have several users under one of these domains.
 
