@@ -154,9 +154,9 @@ WorkingDirectory=/srv/service/quartz_core/bin/Release/netcoreapp2.1/publish
 
 > /srv/service/quartz_core/bin/Release/netcoreapp2.1/publish
 
-If you're wondering about this particular directory, it's because I'm running this inside of Vagrant on my Windows 10 machine.
+If you're wondering about this particular directory, it's because I'm running this inside of Vagrant on my Windows 10 machine and I'm leaving the .NET application in default publish location.
 
-My Vagrantfile here defines a point to mount the code folder to, and a few commands to run when Vagrant boots up.
+My Vagrantfile here defines a point to mount the folder containing all my code, and a few commands to run when Vagrant boots up.
 
 ```ruby
 Vagrant.configure("2") do |config|
@@ -204,6 +204,9 @@ The working directory in above file is relevant, so that I can go find the log f
 
 ## Summary
 
+
+[The code is here.][7]
+
 .NET Core being available to write Linux applications in is very exciting.  The vast power and options available are barely touched upon, and there's so much more that can be done here to secure, to future-proof, and to customize.  I hope the concepts shown here are a kickstarter for new ideas and new work to be done: one code base with lots of reuse for running the same services on Windows and Linux.
 
 References:
@@ -219,3 +222,4 @@ References:
 [4]: https://bugs.centos.org/view.php?id=8767
 [5]: https://www.freedesktop.org/wiki/Software/systemd/
 [6]: https://www.digitalocean.com/community/tutorials/understanding-systemd-units-and-unit-files
+[7]: https://github.com/DanielOliver/Topshelf-Quartz
