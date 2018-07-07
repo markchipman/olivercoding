@@ -10,6 +10,7 @@ tags:
     - Morgemil
     - Functional Programming
     - JSON
+    - .NET
 ---
 
 I'm using the wonderful [Fsharp.Data][0] library to parse the JSON for me and handle all the [edge cases, such as seen in IETF RFC 7159][2].  Fsharp.Data JSON parse spits out results into [this structure][1]:  

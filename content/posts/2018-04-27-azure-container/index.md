@@ -10,6 +10,7 @@ tags:
     - Container
     - Azure Automation Account
     - Azure Container Instances
+    - Powershell
 ---
 
 Containers of all kinds are a perfect use-case for one-off jobs and for isolating programs with invasive installation steps.
