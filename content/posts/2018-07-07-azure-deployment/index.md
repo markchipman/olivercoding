@@ -496,9 +496,9 @@ Now I can use the first script and supply these three parameters.  (The Tenant I
 
 ## C# Cake Build
 
-Now it's strictly necessary that I run this via a C# Cake Build script, but things I'm adding in further blog posts will make it very helpful. So let's start with [C# Cake Build][2].
+It's not necessary that I run this via a C# Cake Build script, but things I'm adding in further blog posts will make it very helpful. So let's start with [C# Cake Build][2].
 
-Cake is just a handy way to make a build script in C#.  Here's the one I'm using.
+Cake is just a handy way to make a build script in C#.  Here's the script I built.
 
 ```csharp
 #addin nuget:?package=Cake.Powershell&version=0.4.5
@@ -619,6 +619,8 @@ Task("Default")
 
 RunTarget(target);
 ```
+
+<br/>
 
 This C# code defines the arguments, where it may get them from, and then does a list of tasks (but only one task so far).
 
