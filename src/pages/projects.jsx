@@ -54,6 +54,7 @@ class Projects extends React.Component {
                         <h1 className="title is-link"><a href="https://www.nuget.org/packages/FLexer/">NuGet</a></h1>
                     </div>
 
+
                     <div className="box" key="2">
                         <h1 className="title">gatsby-source-goodreads</h1>
                         <h3 className="subtitle">Source plugin for pulling your read books into Gatsby from Goodreads API.</h3>
@@ -71,8 +72,25 @@ class Projects extends React.Component {
                         <h1 className="title is-link"><a href="https://www.npmjs.com/package/gatsby-source-goodreads">NPM</a></h1>
                     </div>
 
-                    
+
                     <div className="box" key="3">
+                        <h1 className="title">gatsby-source-azure-storage</h1>
+                        <h3 className="subtitle">Source plugin for pulling data into Gatsby from Azure Storage.</h3>
+                        <div className="field is-grouped is-grouped-multiline">
+                            <div className="control" key="1">
+                                <div className="tags2 has-addons">
+                                    <span className="tag2 is-dark">Status</span>
+                                    <span className="tag2 is-info">Complete</span>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                        <h1 className="title is-link"><a href="https://github.com/DanielOliver/gatsby-source-azure-storage">Github</a></h1>
+                        <h1 className="title is-link"><a href="https://www.npmjs.com/package/gatsby-source-azure-storage">NPM</a></h1>
+                    </div>
+
+                    
+                    <div className="box" key="4">
                         <h1 className="title">Morgemil</h1>
                         <h3 className="subtitle">A level based RogueLike game made in F#</h3>
                         <div className="field is-grouped is-grouped-multiline">
