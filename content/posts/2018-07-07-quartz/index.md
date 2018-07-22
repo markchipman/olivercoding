@@ -204,7 +204,6 @@ The working directory in above file is relevant, so that I can go find the log f
 
 ## Summary
 
-
 [The code is here.][7]
 
 .NET Core being available to write Linux applications in is very exciting.  The vast power and options available are barely touched upon, and there's so much more that can be done here to secure, to future-proof, and to customize.  I hope the concepts shown here are a kickstarter for new ideas and new work to be done: one code base with lots of reuse for running the same services on Windows and Linux.
