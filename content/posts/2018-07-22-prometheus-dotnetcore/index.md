@@ -42,6 +42,8 @@ Running 'dotnet restore' on netcore-prometheus\netcore-prometheus.csproj...
   Restore completed in 3.12 sec for C:\Users\Daniel\Development\netcore-prometheus\netcore-prometheus.csproj.
 
 Restore succeeded.
+PS C:\Users\Daniel\Development> cd .\netcore-prometheus\
+PS C:\Users\Daniel\Development\netcore-prometheus> dotnet run
 ```
 
 ![New MVC](20180722_newnetcore.png)
