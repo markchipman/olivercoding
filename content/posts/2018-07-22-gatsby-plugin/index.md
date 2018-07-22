@@ -160,6 +160,9 @@ query exampleQuery {
 
 ## Summary
 
+[The code is also here.][1]
+
 GatsbyJS is a very good static site generator that benefits from ease of data integration.
 
 [0]: https://github.com/Azure/azure-storage-node
+[1]: https://github.com/DanielOliver/gatsby-source-azure-storage
