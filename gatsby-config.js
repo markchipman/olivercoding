@@ -169,7 +169,8 @@ module.exports = {
         ]
       }
     },
-    `gatsby-plugin-offline`,
+    // `gatsby-plugin-offline`,
+    `gatsby-plugin-remove-serviceworker`,
     `gatsby-plugin-netlify`, // make sure to put last in the array
   ]
 };
