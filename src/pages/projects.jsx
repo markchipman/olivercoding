@@ -35,6 +35,12 @@ class Projects extends React.Component {
                                     <img src="https://img.shields.io/github/release/DanielOliver/flexer.svg" />
                                 </a>
                             </div>
+                            <div className="control" key="5">
+                                <a href="https://www.nuget.org/packages/FLexer">
+                                    <img src="https://img.shields.io/nuget/dt/FLexer.svg" />
+                                </a>
+                            </div>
+
                         </div>
                         <hr />
                         <p> FLexer is a library combining together a Lexer and Parser, to allow ease of construction in custom recursive-descent parsers with infinite backtrack. When searching for a result to "accept", FLexer functions as a depth first search in completely traversing any path, before backtracking and trying a different route.
@@ -56,24 +62,6 @@ class Projects extends React.Component {
 
 
                     <div className="box" key="2">
-                        <h1 className="title">gatsby-source-goodreads</h1>
-                        <h3 className="subtitle">Source plugin for pulling your read books into Gatsby from Goodreads API.</h3>
-                        <div className="field is-grouped is-grouped-multiline">
-                            <div className="control" key="1">
-                                <div className="tags2 has-addons">
-                                    <span className="tag2 is-dark">Status</span>
-                                    <span className="tag2 is-info">Complete</span>
-                                </div>
-                            </div>
-                        </div>
-                        <hr />
-                        <h1 className="title is-link"><a href="https://github.com/DanielOliver/gatsby-source-goodreads">Github</a></h1>
-                        <h1 className="title is-link"><a href="https://www.olivercoding.com/RecommendedBooks">Online Demo</a></h1>
-                        <h1 className="title is-link"><a href="https://www.npmjs.com/package/gatsby-source-goodreads">NPM</a></h1>
-                    </div>
-
-
-                    <div className="box" key="3">
                         <h1 className="title">gatsby-source-azure-storage</h1>
                         <h3 className="subtitle">Source plugin for pulling data into Gatsby from Azure Storage.</h3>
                         <div className="field is-grouped is-grouped-multiline">
@@ -83,11 +71,51 @@ class Projects extends React.Component {
                                     <span className="tag2 is-info">Complete</span>
                                 </div>
                             </div>
+                            <div className="control" key="2">
+                                <a href="https://www.npmjs.com/package/gatsby-source-azure-storage">
+                                    <img src="https://img.shields.io/npm/v/gatsby-source-azure-storage.svg" />
+                                </a>
+                            </div>
+                            <div className="control" key="3">
+                                <a href="https://www.npmjs.com/package/gatsby-source-azure-storage">
+                                    <img src="https://img.shields.io/npm/dt/gatsby-source-azure-storage.svg" />
+                                </a>
+                            </div>
                         </div>
                         <hr />
                         <h1 className="title is-link"><a href="https://github.com/DanielOliver/gatsby-source-azure-storage">Github</a></h1>
                         <h1 className="title is-link"><a href="https://www.npmjs.com/package/gatsby-source-azure-storage">NPM</a></h1>
                     </div>
+
+
+                    <div className="box" key="3">
+                        <h1 className="title">gatsby-source-goodreads</h1>
+                        <h3 className="subtitle">Source plugin for pulling your read books into Gatsby from Goodreads API.</h3>
+                        <div className="field is-grouped is-grouped-multiline">
+                            <div className="control" key="1">
+                                <div className="tags2 has-addons">
+                                    <span className="tag2 is-dark">Status</span>
+                                    <span className="tag2 is-info">Complete</span>
+                                </div>
+                            </div>
+                            <div className="control" key="2">
+                                <a href="https://www.npmjs.com/package/gatsby-source-goodreads">
+                                    <img src="https://img.shields.io/npm/v/gatsby-source-goodreads.svg" />
+                                </a>
+                            </div>
+                            <div className="control" key="3">
+                                <a href="https://www.npmjs.com/package/gatsby-source-goodreads">
+                                    <img src="https://img.shields.io/npm/dt/gatsby-source-goodreads.svg" />
+                                </a>
+                            </div>
+
+                        </div>
+                        <hr />
+                        <h1 className="title is-link"><a href="https://github.com/DanielOliver/gatsby-source-goodreads">Github</a></h1>
+                        <h1 className="title is-link"><a href="https://www.olivercoding.com/RecommendedBooks">Online Demo</a></h1>
+                        <h1 className="title is-link"><a href="https://www.npmjs.com/package/gatsby-source-goodreads">NPM</a></h1>
+                    </div>
+
 
                     
                     <div className="box" key="4">
