@@ -15,27 +15,21 @@ class Projects extends React.Component {
                         <h3 className="subtitle">Simple Lexer and Parser in F#</h3>
                         <div className="field is-grouped is-grouped-multiline">
                             <div className="control" key="1">
-                                <div className="tags2 has-addons">
-                                    <span className="tag2 is-dark">Status</span>
-                                    <span className="tag2 is-info">Complete</span>
-                                </div>
-                            </div>
-                            <div className="control" key="2">
                                 <a href="https://ci.appveyor.com/project/DanielOliver/flexer/branch/master">
                                     <img src="https://ci.appveyor.com/api/projects/status/um5y5hd2a1pd6xtk/branch/master?svg=true" />
                                 </a>
                             </div>
-                            <div className="control" key="3">
+                            <div className="control" key="2">
                                 <a href="https://www.nuget.org/packages/FLexer">
                                     <img src="https://img.shields.io/nuget/v/FLexer.svg" />
                                 </a>
                             </div>
-                            <div className="control" key="4">
+                            <div className="control" key="3">
                                 <a href="https://github.com/DanielOliver/flexer/releases/latest">
                                     <img src="https://img.shields.io/github/release/DanielOliver/flexer.svg" />
                                 </a>
                             </div>
-                            <div className="control" key="5">
+                            <div className="control" key="4">
                                 <a href="https://www.nuget.org/packages/FLexer">
                                     <img src="https://img.shields.io/nuget/dt/FLexer.svg" />
                                 </a>
@@ -66,17 +60,11 @@ class Projects extends React.Component {
                         <h3 className="subtitle">Source plugin for pulling data into Gatsby from Azure Storage.</h3>
                         <div className="field is-grouped is-grouped-multiline">
                             <div className="control" key="1">
-                                <div className="tags2 has-addons">
-                                    <span className="tag2 is-dark">Status</span>
-                                    <span className="tag2 is-info">Complete</span>
-                                </div>
-                            </div>
-                            <div className="control" key="2">
                                 <a href="https://www.npmjs.com/package/gatsby-source-azure-storage">
                                     <img src="https://img.shields.io/npm/v/gatsby-source-azure-storage.svg" />
                                 </a>
                             </div>
-                            <div className="control" key="3">
+                            <div className="control" key="2">
                                 <a href="https://www.npmjs.com/package/gatsby-source-azure-storage">
                                     <img src="https://img.shields.io/npm/dt/gatsby-source-azure-storage.svg" />
                                 </a>
@@ -93,17 +81,11 @@ class Projects extends React.Component {
                         <h3 className="subtitle">Source plugin for pulling your read books into Gatsby from Goodreads API.</h3>
                         <div className="field is-grouped is-grouped-multiline">
                             <div className="control" key="1">
-                                <div className="tags2 has-addons">
-                                    <span className="tag2 is-dark">Status</span>
-                                    <span className="tag2 is-info">Complete</span>
-                                </div>
-                            </div>
-                            <div className="control" key="2">
                                 <a href="https://www.npmjs.com/package/gatsby-source-goodreads">
                                     <img src="https://img.shields.io/npm/v/gatsby-source-goodreads.svg" />
                                 </a>
                             </div>
-                            <div className="control" key="3">
+                            <div className="control" key="2">
                                 <a href="https://www.npmjs.com/package/gatsby-source-goodreads">
                                     <img src="https://img.shields.io/npm/dt/gatsby-source-goodreads.svg" />
                                 </a>
@@ -117,17 +99,31 @@ class Projects extends React.Component {
                     </div>
 
 
-                    
                     <div className="box" key="4">
-                        <h1 className="title">Morgemil</h1>
-                        <h3 className="subtitle">A level based RogueLike game made in F#</h3>
+                        <h1 className="title">ASP.NET Core Gatsby Template</h1>
+                        <h3 className="subtitle">ASP.NET Core Single-Page-Application (SPA) template using GatsbyJS as the SPA framework.</h3>
                         <div className="field is-grouped is-grouped-multiline">
                             <div className="control" key="1">
-                                <div className="tags2 has-addons">
-                                    <span className="tag2 is-dark">Status</span>
-                                    <span className="tag2 is-warning">In-Complete</span>
-                                </div>
+                                <a href="https://www.nuget.org/packages/OliverCoding.GatsbyTemplate.CSharp/">
+                                    <img src="https://img.shields.io/nuget/v/OliverCoding.GatsbyTemplate.CSharp.svg" />
+                                </a>
                             </div>
+                            <div className="control" key="2">
+                                <a href="https://www.nuget.org/packages/OliverCoding.GatsbyTemplate.CSharp/">
+                                    <img src="https://img.shields.io/nuget/dt/OliverCoding.GatsbyTemplate.CSharp.svg" />
+                                </a>
+                            </div>
+                        </div>
+                        <hr />
+                        <h1 className="title is-link"><a href="https://github.com/DanielOliver/OliverCoding.GatsbyTemplate">Github</a></h1>
+                        <h1 className="title is-link"><a href="https://www.nuget.org/packages/OliverCoding.GatsbyTemplate.CSharp/">NuGet</a></h1>
+                    </div>
+
+                    
+                    <div className="box" key="5">
+                        <h1 className="title">Morgemil</h1>
+                        <h3 className="subtitle">A work-in-progress level based RogueLike game made in F#</h3>
+                        <div className="field is-grouped is-grouped-multiline">
                         </div>
                         <hr />
                         <h1 className="title is-link"><a href="https://github.com/DanielOliver/Morgemil">Github</a></h1>
