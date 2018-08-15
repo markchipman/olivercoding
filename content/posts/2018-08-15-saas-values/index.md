@@ -50,6 +50,8 @@ I've never had all of these values at one time on any application, but I'd like 
     * Commercial software licenses tend to limit the number of environments and how it can be used. And then, depending on product, registration and licensing and auditing process becomes a thorn in everyone's side. Think carefully before buying a license to a service or software, it's just the beginning of the costs and workarounds.
 * **Source control is not optional.**
     * Production instance should not be source control.
+* **Listen to everyone, but don't make anyone the most important.**
+    * Everyone wants things a certain way: Quality Assurance, Security, Database Administrators, System Administrators, Software Service Administrators, Project Managers, Software Engineers, Accounts Receivable, and everyone else. The best process for any one group, is unlikely to be the best compromise for the company as a whole.
 * **Simplicity**
     * Automating builds, deployments, tests, monitoring, and secret management is already hard. All it takes is one item that can't be figured out, for everything else above to be ditched in the name of "it's just one thing, we'll handle it by hand" and it's a downhill slope from there.
 * **Recognizing Value**
